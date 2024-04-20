@@ -95,6 +95,7 @@ function allClear() {
     number2 = '';
     operator = '';
     step = 1;
+    equal.disabled = false;
 }
 
 function newVal(){
