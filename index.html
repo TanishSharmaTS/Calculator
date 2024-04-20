@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="output" id="output"></div>
+        <div class="button-container">
+            <div class="row-1">
+                <button class="numbers" id="seven" type="button" onclick="getNumber(7)">7</button>
+                <button class="numbers" id="eight" type="button" onclick="getNumber(8)">8</button>
+                <button class="numbers" id="nine" type="button" onclick="getNumber(9)">9</button>
+                <button class="clear" id="clear">C</button>
+            </div>
+            <div class="row-2">
+                <button class="numbers" id="four" type="button" onclick="getNumber(4)">4</button>
+                <button class="numbers" id="five" type="button" onclick="getNumber(5)">5</button>
+                <button class="numbers" id="six" type="button" onclick="getNumber(6)">6</button>
+                <button class="operators" id="add" type="button" onclick="getOperation('+')">+</button>
+            </div>
+            <div class="row-3">
+                <button class="numbers" id="one" type="button" onclick="getNumber(1)">1</button>
+                <button class="numbers" id="two" type="button" onclick="getNumber(2)">2</button>
+                <button class="numbers" id="three" type="button" onclick="getNumber(3)">3</button>
+                <button class="operators" id="subtract" type="button" onclick="getOperation('-')">-</button>
+            </div>
+            <div class="row-4">
+                <button class="decimal" id="decimal" type="button" onclick="getNumber('.')">.</button>
+                <button class="numbers" id="zero" type="button" onclick="getNumber(0)">0</button>
+                <button class="operators" id="division" type="button" onclick="getOperation('/')">/</button>
+                <button class="operators" id="multiply" type="button" onclick="getOperation('*')">*</button>
+
+            </div>
+            <div class="row-5">
+                <button class="reset" id="reset" type="button">AC</button>
+                <button class="equals" id="equals" type="button">=</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
